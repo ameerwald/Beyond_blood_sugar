@@ -1,0 +1,7 @@
+Model,Best Parameters
+KNN,{'n_neighbors': 3}
+Logistic Regression,"{'C': 21.54434690031882, 'solver': 'liblinear'}"
+Multinomial Logistic Regression,"{'C': 9.999999999999999e-05, 'multi_class': 'multinomial', 'solver': 'newton-cg'}"
+Decision Tree,"{'max_depth': 5, 'min_samples_split': 5}"
+Random Forest,"{'max_depth': 5, 'min_samples_split': 2, 'n_estimators': 50}"
+XGBoost,"{'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 50}"

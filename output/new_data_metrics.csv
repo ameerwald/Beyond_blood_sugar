@@ -1,0 +1,21 @@
+Model,Best Model,Precision,Recall,F1-Score
+Dummy,"DummyClassifier(random_state=15, strategy='uniform')",1.0,0.5294117647058824,0.6923076923076923
+XGBoost,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric='logloss',
+              feature_types=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.01, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=5,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=50,
+              n_jobs=None, num_parallel_tree=None, random_state=75, ...)",1.0,0.6108597285067874,0.7584269662921348
+Naive Bayes,GaussianNB(),1.0,0.5995475113122172,0.7496463932107497
+Decision Tree,"DecisionTreeClassifier(max_depth=5, min_samples_split=5)",1.0,0.6470588235294118,0.7857142857142857
+Random Forest,"RandomForestClassifier(max_depth=5, n_estimators=50, random_state=75)",1.0,0.5950226244343891,0.7460992907801418
+Multinomial Logistic Regression,"LogisticRegression(C=9.999999999999999e-05, max_iter=1000,
+                   multi_class='multinomial', solver='newton-cg')",1.0,1.0,1.0
+Logistic Regression,"LogisticRegression(C=21.54434690031882, class_weight='balanced', max_iter=1000,
+                   solver='liblinear')",1.0,0.5294117647058824,0.6923076923076923
+KNN,KNeighborsClassifier(n_neighbors=3),1.0,0.3054298642533937,0.4679376083188908
