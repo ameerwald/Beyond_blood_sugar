@@ -228,55 +228,6 @@ def plot_new_data_metrics(metrics_df, figure_dir='figures/'):
     plt.show()
 
 
-
-def plot_new_recall_comparison(test_metrics_df, new_data_metrics_df, figure_dir='figures/'):
-    """
-    Plot and save the recall comparison between the test set and the new dataset.
-    
-    Parameters:
-    - test_metrics_df (pd.DataFrame): DataFrame containing the model performance metrics for the test set.
-    - new_data_metrics_df (pd.DataFrame): DataFrame containing the model performance metrics for the new dataset.
-    - figure_dir (str): Directory to save the figures.
-    """
-    # checking if output directory exists and making one if not
-    os.makedirs(figure_dir, exist_ok=True)
-
-    # taking only the 'model' and 'recall' columns for comparison
-    test_recall = test_metrics_df[['Model', 'Test Recall']].copy()  
-    test_recall.rename(columns={'Test Recall': 'Recall'}, inplace=True)
-    test_recall['Dataset'] = 'Test Set'
-
-    new_dataset_recall = new_data_metrics_df[['Model', 'Recall']].copy()
-    new_dataset_recall['Dataset'] = 'New Dataset'
-
-    # combining the recall data from both 
-    combined_recall_data = pd.concat([test_recall, new_dataset_recall])
-
-    # pivoting the data to plot 
-    recall_pivot = combined_recall_data.pivot(index='Model', columns='Dataset', values='Recall')
-
-    # reindexing to ensure consistent order of model names
-    model_order = test_metrics_df['Model'].unique()
-    recall_pivot = recall_pivot.reindex(model_order)
-
-
-    # plotting the recall comparison
-    fig, ax = plt.subplots(figsize=(10, 6))
-    recall_pivot.plot(kind='bar', ax=ax, color=['#6495ED', '#00008B'], edgecolor='grey')
-    ax.set_ylabel('Recall Score')
-    ax.set_title('Recall Metric Comparison on Test Set and New Dataset')
-    ax.grid(axis='y', linestyle='--', alpha=0.7)
-
-    # adjusting x-ticks 
-    ax.set_xticks(range(len(recall_pivot)))
-    ax.set_xticklabels(recall_pivot.index, rotation=45, ha='right')
-    plt.legend(title='Dataset')
-    plt.tight_layout()
-
-    # save the figure 
-    plt.savefig(os.path.join(figure_dir, 'recall_comparison_both_datasets.png'), dpi=300, bbox_inches='tight')
-    plt.show()
-
 def plot_new_recall_comparison(test_metrics_df, new_data_metrics_df, figure_dir='figures/'):
     """
     Plot and save the recall comparison between the test set and the new dataset.
