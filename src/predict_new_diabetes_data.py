@@ -50,7 +50,7 @@ def main():
     plot_new_data_metrics(new_data_metrics_df, figure_dir=figure_dir)
     plot_new_recall_comparison(test_metrics_df, new_data_metrics_df, figure_dir=figure_dir)
     # print update 
-    print("Metrics have been saved to CSV files in the 'output' directory and visualizations to PNG images in the 'figures' directory.")
+    print("New metrics have been saved to CSV files in the 'output' directory and visualizations to PNG images in the 'figures' directory.")
 
 if __name__ == "__main__":
     main()

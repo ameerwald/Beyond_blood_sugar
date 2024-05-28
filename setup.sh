@@ -10,12 +10,11 @@ python3 -m venv env
 source ./env/bin/activate
 
 # requirements
-
-python3 -m pip install ipykernel
-python3 -mipykernel install --user --name=env
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
-python3 -m pip install datasets
+python3 -m pip install ipykernel
+python3 -m ipykernel install --user --name=env
+
 
 ## if requirements change then rerun this again, also in requirements.txt
 

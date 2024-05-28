@@ -38,9 +38,8 @@ While this runs the scripts and deactivates the virtual environment when it is d
 bash run.sh
 ```
 
-The scripts can also be run individually if that is preferred, given that they may take a few hours to run all together. 
-
-This is done by running each script from the command line (see below)
+The scripts can also be run individually if that is preferred. 
+This is done by running each script from the command line (see below).
 ```
 python3 src/evaluate_diabetes_data.py
 python3 src/predict_new_diabetes_data.py
