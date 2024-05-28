@@ -1,4 +1,4 @@
-# TITLE HERE 
+# Beyond blood sugar: Machine learning attempts to predict diabetes
 
 This repository is the product for the Data Science exam project, Spring 2024, by author Anja Feibel Meerwald.
 
@@ -19,15 +19,15 @@ Dataset1 can be found here [here] (https://www4.stat.ncsu.edu/~boos/var.select/d
 | data   | This folder contains both datasets 
 | figures  | Plots and tables of the results      
 | output  |  Contains CSV files of results and metrics 
-| models  | The saved topic model is here    
+| models  | The saved models are here, folder is hidden due to size  
 | src  | Py scripts 
-| Uutils  | Functions used for the various py scripts        
+| utils  | Functions used for the various py scripts        
 
 
 ## To run the scripts 
 
 1. Clone the repository, either on ucloud or something like worker2.
-2. From the command line, at the /data_science_exam/ folder level, run the following lines of code. 
+2. From the command line, at the /Beyond_blood_sugar/ folder level, run the following lines of code. 
 
 This will create a virtual environment and install the correct requirements.
 ``` 
