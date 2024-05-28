@@ -6,9 +6,9 @@ This repository is the product for the Data Science exam project, Spring 2024, b
 
 These datasets are in the 'data' folder but can otherwise we found in the following links. 
 
-Dataset2 is available [here](https://data.mendeley.com/datasets/jpp8bsjgrm/1) and is a cleaned up and refined version of [this] (https://data.mendeley.com/datasets/wj9rwkp9c2/1) datset. 
+Dataset2 is available [here](https://data.mendeley.com/datasets/jpp8bsjgrm/1) and is a cleaned up and refined version of [this](https://data.mendeley.com/datasets/wj9rwkp9c2/1) datset. 
 
-Dataset1 can be found here [here] (https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt) which is the raw data from [here] (https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html) which I found via scikit-learn's website where information about the dataset can be found [here] (https://scikit-learn.org/stable/datasets/toy_dataset.html).
+Dataset1 can be found here [here](https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt) which is the raw data from [here](https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html) which I found via scikit-learn's website where information about the dataset can be found [here](https://scikit-learn.org/stable/datasets/toy_dataset.html).
 
 
 
@@ -39,7 +39,7 @@ bash run.sh
 ```
 
 The scripts can also be run individually if that is preferred. 
-This is done by running each script from the command line (see below).
+This is done by running each script from the command line (see below) after the environment has been activated.
 ```
 python3 src/evaluate_diabetes_data.py
 python3 src/predict_new_diabetes_data.py
