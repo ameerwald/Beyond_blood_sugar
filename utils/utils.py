@@ -115,9 +115,6 @@ def initialize_models():
         'Logistic Regression': {
             'model': LogisticRegression(max_iter=1000, class_weight='balanced'), 
             'params': {'C': np.logspace(-4, 4, 10), 'solver': ['liblinear', 'lbfgs', 'saga']}},
-        'Multinomial Logistic Regression': {
-            'model': LogisticRegression(max_iter=1000, solver='lbfgs', multi_class='multinomial'), 
-            'params': {'C': np.logspace(-4, 4, 10), 'solver': ['newton-cg', 'lbfgs'], 'multi_class': ['multinomial']}},
         'Decision Tree': {
             'model': DecisionTreeClassifier(), 
             'params': {'max_depth': [3, 5, 10, 20], 'min_samples_split': [2, 5, 10]}},
